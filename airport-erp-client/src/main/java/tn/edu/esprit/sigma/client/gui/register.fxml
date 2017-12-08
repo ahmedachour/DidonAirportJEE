@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.edu.esprit.sigma.controllers.registerController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="607.0" layoutX="-6.0" opacity="0.8">
+         <image>
+            <Image url="@FOND.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-6.0" prefHeight="25.0" prefWidth="607.0">
+         <menus>
+            <Menu fx:id="btn_home" mnemonicParsing="false" onAction="#showHome" text="Home" />
+            <Menu mnemonicParsing="false" text="Flights">
+               <items>
+                  <MenuItem fx:id="btn_showFlights" mnemonicParsing="false" onAction="#showFlights" text="Book a fLight" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Services">
+               <items>
+                  <MenuItem fx:id="btn_meals" mnemonicParsing="false" onAction="#showMeals" text="Book Meal" />
+                  <MenuItem fx:id="btn_car" mnemonicParsing="false" onAction="#showCar" text="Book car" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Register">
+               <items>
+                  <MenuItem fx:id="btn_register" mnemonicParsing="false" onAction="#Register" text="Register" />
+               </items>
+            </Menu>
+            <Menu fx:id="btn_maps" mnemonicParsing="false" onAction="#showMaps" text="Maps" />
+            <Menu fx:id="btn_about" mnemonicParsing="false" onAction="#showAbout" text="About" />
+         </menus>
+      </MenuBar>
+      <Pane layoutX="29.0" layoutY="55.0" prefHeight="358.0" prefWidth="292.0">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" prefHeight="17.0" prefWidth="273.0" text="Sign in as a Provider :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#d1b543" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="14.0" layoutY="53.0" prefHeight="17.0" prefWidth="100.0" text="Manager Name :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="101.0" prefHeight="17.0" prefWidth="100.0" text="Company Name :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="151.0" prefHeight="17.0" prefWidth="94.0" text="Email :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="197.0" text="Password :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            
+            <Label layoutX="14.0" layoutY="246.0" text="Phone Number">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_managerName" layoutX="129.0" layoutY="49.0" prefHeight="25.0" prefWidth="161.0" />
+            <TextField fx:id="txt_companyName" layoutX="129.0" layoutY="97.0" prefHeight="25.0" prefWidth="161.0" />
+            <TextField fx:id="txt_email" layoutX="129.0" layoutY="147.0" prefHeight="25.0" prefWidth="161.0" promptText="XXXX@XXXX.XX" />
+            <TextField fx:id="txt_phoneNumer" layoutX="129.0" layoutY="242.0" prefHeight="25.0" prefWidth="161.0" promptText="00216(XXXXXXXX)" />
+            <PasswordField fx:id="txt_password" layoutX="129.0" layoutY="193.0" prefHeight="25.0" prefWidth="161.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btn_signIn" layoutX="465.0" layoutY="470.0" mnemonicParsing="false" onAction="#signIn" prefHeight="86.0" prefWidth="111.0" />
+      <ImageView fitHeight="86.0" fitWidth="117.0" layoutX="462.0" layoutY="470.0">
+         <image>
+            <Image url="@../../../../../../../../../../../../../../Images/groupe-nouvel-utilisateur--icone-7100-128.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

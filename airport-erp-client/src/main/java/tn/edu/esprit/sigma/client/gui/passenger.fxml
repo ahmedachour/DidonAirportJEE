@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.edu.esprit.sigma.controllers.passengerController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="607.0" layoutX="-6.0">
+         <image>
+            <Image url="@FOND.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-6.0" prefHeight="25.0" prefWidth="607.0">
+        <menus>
+          <Menu fx:id="btn_home" mnemonicParsing="false" onAction="#showHome" text="Home" />
+          <Menu mnemonicParsing="false" text="Flights">
+            <items>
+              <MenuItem fx:id="btn_showFlights" mnemonicParsing="false" onAction="#showFlights" text="Book a fLight" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Services">
+            <items>
+              <MenuItem fx:id="btn_meals" mnemonicParsing="false" onAction="#showMeals" text="Book Meal" />
+                  <MenuItem fx:id="btn_car" mnemonicParsing="false" onAction="#showCar" text="Book car" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Register">
+              <items>
+                <MenuItem fx:id="btn_register" mnemonicParsing="false" onAction="#Register" text="Register" />
+              </items>
+            </Menu>
+            <Menu fx:id="btn_maps" mnemonicParsing="false" text="Maps">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showMapAirport" text="Show map" />
+               </items></Menu>
+            <Menu fx:id="btn_about" mnemonicParsing="false" onAction="#showAbout" text="About" />
+        </menus>
+      </MenuBar>
+      <TableView fx:id="tbl_flights" layoutX="100.0" layoutY="123.0" prefHeight="357.0" prefWidth="442.0">
+        <columns>
+          <TableColumn fx:id="cl_flights" prefWidth="136.0" text="Flights" />
+          <TableColumn fx:id="cl_depaturedate" prefWidth="117.0" text="Departure Date " />
+            <TableColumn fx:id="cl_ArrivalDate" prefWidth="97.0" text="Arrival Date" />
+            <TableColumn fx:id="cl_destination" prefWidth="91.0" text="Destination" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

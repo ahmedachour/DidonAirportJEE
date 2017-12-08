@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="607.0" layoutX="-6.0">
+         <image>
+            <Image url="@FOND.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-6.0" prefHeight="25.0" prefWidth="607.0">
+        <menus>
+          <Menu fx:id="btn_home" mnemonicParsing="false" onAction="#showHome" text="Home" />
+          <Menu mnemonicParsing="false" text="Flights">
+            <items>
+              <MenuItem fx:id="btn_showFlights" mnemonicParsing="false" onAction="#showFlights" text="Show FLights" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Services">
+            <items>
+              <MenuItem fx:id="btn_meals" mnemonicParsing="false" onAction="#showMeals" text="Book Meal" />
+                  <MenuItem fx:id="btn_car" mnemonicParsing="false" onAction="#showCar" text="Book car" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Register">
+              <items>
+                <MenuItem fx:id="btn_register" mnemonicParsing="false" onAction="#Register" text="Register" />
+              </items>
+            </Menu>
+            <Menu fx:id="btn_maps" mnemonicParsing="false" onAction="#showMaps" text="Maps" />
+            <Menu fx:id="btn_about" mnemonicParsing="false" onAction="#showAbout" text="About" />
+        </menus>
+      </MenuBar>
+      <ListView fx:id="listFlight" layoutX="81.0" layoutY="119.0" prefHeight="382.0" prefWidth="437.0" />
+   </children>
+</AnchorPane>
